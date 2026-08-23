@@ -1,0 +1,8 @@
+name = "asterfind-relay"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "asterfind-db"
+database_id = "COLE_AQUI_O_DATABASE_ID"

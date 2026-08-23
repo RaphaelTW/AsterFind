@@ -1,0 +1,16 @@
+{
+  "name": "asterfind-relay",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create asterfind-db",
+    "db:migrate:local": "wrangler d1 execute asterfind-db --local --file=./schema.sql",
+    "db:migrate:remote": "wrangler d1 execute asterfind-db --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "latest",
+    "@cloudflare/workers-types": "latest"
+  }
+}

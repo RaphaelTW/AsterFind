@@ -1,0 +1,12 @@
+{
+  "name": "asterfind",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/mobile", "worker"],
+  "scripts": {
+    "mobile": "npm --workspace apps/mobile run start",
+    "android": "npm --workspace apps/mobile run android",
+    "worker:dev": "npm --workspace worker run dev",
+    "worker:deploy": "npm --workspace worker run deploy"
+  }
+}
